@@ -29,6 +29,7 @@ header>h1{
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte3);
+    font-size: 10vw;
 }
 
 header> p{
@@ -51,6 +52,11 @@ section{
     padding-left: 30px;
     line-height: 2em;
     font-family: var(--fonte2);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -59,13 +65,28 @@ section.normal{
 }
 
 section.img{
-    background-color: rgba(19, 18, 18, 0.685);
+    background-color: rgba(19, 18, 18, 0.774);
     color: white;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.img> p{
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.212);
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.493);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img001{
+    background-image: url('../df005/imagens/image-1.png');
+    background-position: top right;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.836);
+}
+
+section#img002{
+    background-image: url('../df005/imagens/pokemon-pikachu-spearow-pokemon-wallpaper-preview.jpg');
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.699);
 }
 
 footer{
