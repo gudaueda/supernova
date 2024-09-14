@@ -18,16 +18,34 @@
          border: 1px solid black;
          padding: 5px;
       }
-         thead{
+         thead, tfoot{
             background-color: grey;
+            color: aliceblue;
+         }
+         td.num{
+            text-align: right;
+         }
+
+         tbody> tr:nth-child(odd){
+            background-color: rgba(189, 175, 175, 0.719);
+         }
+
+
+         caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: aqua;
          }
     </style>
 </head>
 <body>
-    <h1>Uso de tabeas grandes</h1>
+    <h1>Uso de tabelas grandes</h1>
     <!--
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+      CAPTION= titulo da tabela
+      SCOPO= identificaçao de linha/coluna
       THEAD
          TR,TD,TH
       TBODY
@@ -36,29 +54,63 @@
          TR,TD,TH
     -->
          <table>
+         <caption>População das unidades federativas</caption>
             <thead>
                <tr>
-                  <th>Estado</th>
-                  <th>População</th>
+                  <th scope="col" style="width: 300px;">Estado</th>
+                  <th scope="col" style="width: 50px;">População</th>
                </tr>
             </thead>
             <tbody>
                <tr>
                   <td>São Paulo</td>
-                  <td>49 919 049</td>
+                  <td class="num">49 919 049</td>
                   </tr>
                   <tr>
                      <td>Minas Gerais</td>
-                     <td>21 168 791</td>
+                     <td class="num">21 168 791</td>
                   </tr>
                   <tr>
                      <td>Rio de Janeiro</td>
-                     <td>17 264 943</td>
+                     <td class="num">17 264 943</td>
                </tr>
+                  <tr>
+                     <td>Bahia</td>
+                     <td class="num">14 873 064</td>
+                  </tr>
+                  <tr>
+                     <td>Paraná</td>
+                     <td class="num">11 433 957</td>
+                  </tr>
+                  <tr>
+                     <td>Rio Grande do Sul</td>
+                     <td class="num">11 377 239</td>
+                  </tr>
+                  <tr>
+                     <td>Pernambuco</td>
+                     <td class="num">9 577 091</td>
+                  </tr>
+                  <tr>
+                     <td>Ceára</td>
+                     <td class="num">9 132 078</td>
+                  </tr>
+                  <tr>
+                     <td>Pará</td>
+                     <td class="num">8 602 856</td>
+                  </tr>
+                  <tr>
+                     <td>Santa Catarina</td>
+                     <td class="num">7 162 788</td>
+                  </tr>
+                  <tr>
+                     <td>Maranhão</td>
+                     <td class="num">7 018 435</td>
+                  </tr>
+
             </tbody>
             <tfoot>
-               <th>Tota de habitantes</th>
-               <td>0000</td>
+               <th scope="row">Total de habitantes</th>
+               <td class="num">0000</td>
             </tfoot>
          </table>
 </body>
