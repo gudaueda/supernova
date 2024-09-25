@@ -7,18 +7,21 @@
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="get" autocomplete="off">
         <p>
-            <label for="">Usuário:</label>
-            <input type="text" name="usu" id="iusu">
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Nome do Usuário" autocomplete="username">
             <!--name importante para html/php.  id importante label e JS -->
+            <!--required = requer preenchimento de campo-->
+            <!--placeholder = informação de campo-->
         </p>
         <p>
             <label for="isen">Senha:</label>
-            <input type="password" name="sen" id="isen">
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" autocomplete="current-password">
         </p>
         <p>
-            <label for="">Ronaldo</label>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
 </body>
