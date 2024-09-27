@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="Cor" id="icor">
+        </p>
+        <p>
+            <label for="ifoto">Foto:</label>
+            <input type="file" name="Foto" id="ifoto">
+        </p>
+        <!--Quando usar o controle de envio de arquivos você deve usar o método POST  -->
+        <p>
+            <label for="inviel">Nível de satisfação</label>
+            <input type="range" name="nivel" id="inivel">
+        </p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </form>
+</body>
+</html>
