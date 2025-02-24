@@ -39,7 +39,7 @@ header>nav>a{
 header > nav> a:hover{
     background-color: blueviolet;
     color: chartreuse;
-    transition: .5s;
+    transition: .5s ;
 }
 
 main{
