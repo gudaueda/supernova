@@ -27,6 +27,21 @@ header>nav{
 
 }
 
+header>nav>a{
+    background-color: aquamarine;
+    padding: 10px;
+    margin:5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav> a:hover{
+    background-color: blueviolet;
+    color: chartreuse;
+    transition: .5s;
+}
+
 main{
     background-color: white;
     margin: 10px;
