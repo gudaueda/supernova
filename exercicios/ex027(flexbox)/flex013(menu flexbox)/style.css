@@ -16,14 +16,23 @@ body{
 
 header{
     background-color: gray;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header>h1{
-    border: 1px dotted black;
+    border: 3px dotted black;
+    flex: 0 0 200px;
+
 }
 
 header>nav{
-    border: 1px dotted black;
+    border: 3px dotted black;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
